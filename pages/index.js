@@ -1,65 +1,56 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import 'bootstrap/dist/css/bootstrap.css'
+import { Nav } from '../components/Nav'
+import Link from 'next/link'
 
 export default function Home() {
+
+
   return (
-    <div className={styles.container}>
+    <>
       <Head>
-        <title>Create Next App</title>
+        <title>5eral Footprint</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <Nav />
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <div class="first d-flex align-items-center">
+        <div>
+          <h2>
+            Australia is home to many animals that have been introduced since
+            European Settlement. Some of these are invasive - creating
+            significant problems for Agriculture in Victoria.
+          </h2>
+          <div class="d-flex justify-content-center">
+            <button class="btn btn-secondary btn-lg">KNOW MORE </button>
+          </div>
         </div>
-      </main>
+      </div>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+      <div class="second d-flex align-items-center">
+          <div>
+            <img src="/photo-2.png"></img>
+          </div>
+          <div class='paragraph'>
+          <h4>
+            Invasive Species, also known as feral/pest animals is a statewide
+            problem in Victoria that destroy habitat, pollute our water, damage
+            farmland and kill precious native plants and animals. Feral footprints
+            takes the initiative to help Farmers in Victoria to learn about these
+            species and provide possible solutions to eradicate them.
+          </h4>
+          </div>
+      </div>
+
+      <div class='footer d-flex justify-content-evenly align-items-center'>
+          <Link href='/' class='link'>Home</Link>
+          <Link href='/' class='link'>Know Your Feral Animal</Link>
+          <Link href='/' class='link'>About Us</Link>
+      </div>
+    </>
+  );
 }
