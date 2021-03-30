@@ -1,24 +1,14 @@
-import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import 'bootstrap/dist/css/bootstrap.css'
-import { Nav } from '../components/Nav'
-import Link from 'next/link'
+import { Layout } from '../components/Layout'
 
 export default function Home() {
 
 
   return (
     <>
-      <Head>
-        <title>5eral Footprint</title>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charset="utf-8" />
-      </Head>
-
-      <Nav />
-
-      <div class="first d-flex align-items-center">
+      <Layout>
+        <div class="first d-flex align-items-center">
         <div>
           <h2>
             Australia is home to many animals that have been introduced since
@@ -45,12 +35,7 @@ export default function Home() {
           </h4>
           </div>
       </div>
-
-      <div class='footer d-flex justify-content-evenly align-items-center'>
-          <Link href='/' class='link'>Home</Link>
-          <Link href='/' class='link'>Know Your Feral Animal</Link>
-          <Link href='/' class='link'>About Us</Link>
-      </div>
+      </Layout>
     </>
   );
 }

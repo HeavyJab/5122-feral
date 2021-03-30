@@ -27,12 +27,17 @@ body {
     margin: 20px;
     flex-direction: column;
   }
+
+  .large-logo {
+    height: auto;
+    max-width: 100%;
+  }
   
 }
 
 .second img{
   height: auto; 
-  width: 100%;
+  width: 300px;
 }
 
 .paragraph h4 {
@@ -80,5 +85,15 @@ a {
 
 .card {
   margin: 15px;
-  width: 18rem;
+  width: 15rem;
+}
+
+.divider {
+  height: 20px;
+  background-color: orange;
+}
+
+h3 {
+  color: orange;
+  margin: 50px;
 }
