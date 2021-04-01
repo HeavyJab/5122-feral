@@ -1,6 +1,9 @@
-import styles from '../styles/Home.module.css'
-import 'bootstrap/dist/css/bootstrap.css'
-import { Layout } from '../components/Layout'
+import styles from '../styles/Home.module.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import { Layout } from '../components/Layout';
+import AnimalSection from '../components/AnimalSection'
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 export default function Home() {
 
@@ -16,25 +19,37 @@ export default function Home() {
             significant problems for Agriculture in Victoria.
           </h2>
           <div class="d-flex justify-content-center">
-            <button class="btn btn-secondary btn-lg">KNOW MORE </button>
+            <button class="btn btn-secondary btn-lg">
+              <a  href='#second'>
+              KNOW MORE
+              </a>
+            </button>
           </div>
         </div>
       </div>
 
-      <div class="second d-flex align-items-center">
+        <Carousel 
+        showThumbs={false}
+        interval={3000}
+        autoPlay={true}
+        infiniteLoop={true}
+        centerMode={true}
+        centerSlidePercentage={100}
+        >
           <div>
-            <img src="/photo-2.png"></img>
+            <img src="/photo-1.jpeg"/>
           </div>
-          <div class='paragraph'>
-          <h4>
-            Invasive Species, also known as feral/pest animals is a statewide
-            problem in Victoria that destroy habitat, pollute our water, damage
-            farmland and kill precious native plants and animals. Feral footprints
-            takes the initiative to help Farmers in Victoria to learn about these
-            species and provide possible solutions to eradicate them.
-          </h4>
+          <div>
+            <img src="/pig.png"/>
           </div>
-      </div>
+          <div>
+            <img src="/dog.jpeg"/>
+          </div>
+        </Carousel>
+
+      <AnimalSection></AnimalSection>
+
+
       </Layout>
     </>
   );

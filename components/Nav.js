@@ -9,7 +9,7 @@ export const Nav = () => {
     return (
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid justify-content-between" style={{width: 100 + '%'}}>
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="/">
             <img src="/logo.png"></img>
           </a>
           <button

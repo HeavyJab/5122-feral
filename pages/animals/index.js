@@ -1,8 +1,6 @@
-import Head from 'next/head'
 import 'bootstrap/dist/css/bootstrap.css'
-import { Layout } from '../components/Layout'
-import { Card } from '../components/Card'
-import Link from 'next/link'
+import { Layout } from '../../components/Layout'
+import { Card } from '../../components/Card'
 
 export default function Home() {
 
