@@ -7,10 +7,10 @@ export const Footer = () =>{
         <Link href="/" class="link">
           Home
         </Link>
-        <Link href="/" class="link">
+        <Link href="/animals" class="link">
           Know Your Feral Animal
         </Link>
-        <Link href="/" class="link">
+        <Link href="/about" class="link">
           About Us
         </Link>
       </div>

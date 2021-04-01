@@ -37,7 +37,8 @@ export default function AnimalDetail(props) {
               <h4>Common Name: {data.commonName}</h4>
               <h4>Science Name: {data.scientificName}</h4>
               <h4>Other Common Name: {}</h4>
-              <h4>Origin {data.originPlace}</h4>
+              <h4>Origin: {data.originPlace}</h4>
+              <h4>Distribution: {data.distribution}</h4>
             </div>
           </div>
         </div>
