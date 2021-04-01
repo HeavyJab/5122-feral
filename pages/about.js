@@ -20,15 +20,18 @@ export default function Home() {
             </h4>
           <div class="animal-section-1 d-flex justify-content-center">
             <Card
-              title={"Raising awareness on the Impact of Invasive Animals on Agriculture by providing information on the declared established pest animals in Victoria"}
+              desc={"Raising awareness on the Impact of Invasive Animals on Agriculture by providing information on the declared established pest animals in Victoria"}
+              title={'Mission'}
               src={"/mission.png"}
             ></Card>
             <Card
-              title={"We help identify, prevent, control and eradicate pest animals from farmlands in Victoria in order to increase Agriculture Productivity"}
+              desc={"We help identify, prevent, control and eradicate pest animals from farmlands in Victoria in order to increase Agriculture Productivity"}
+              title={'Vision'}
               src={"/vision.jpeg"}
             ></Card>
             <Card
-              title={"Increase Farmer's Productivity, Promote Urban Wilderness, Keep Livestock and Native animals safe"}
+              desc={"Increase Farmer's Productivity, Promote Urban Wilderness, Keep Livestock and Native animals safe"}
+              title={'Values'}
               src={"/values.png"}
             ></Card>
           </div>
