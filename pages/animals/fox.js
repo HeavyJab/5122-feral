@@ -1,10 +1,19 @@
-import AnimalDetail from '../../components/AnimalDetail'
+import 'bootstrap/dist/css/bootstrap.css'
+import { Layout } from '../../components/Layout'
+import AnimalDetail from '../../components/AnimalDetail';
+import { useState } from 'react';
+import AnimalNav from '../../components/AnimalNav'
 
-export default function AnimalPage() {
-    return (
-        <AnimalDetail
-            url={'https://ie-iteration1.herokuapp.com/api/fox'}
-            name={'Feral Fox (Vulpes Vulpes)'}
-        ></AnimalDetail>
-    )
+export default function Animals() {
+  return (
+    <>
+      <Layout>
+        <AnimalNav>
+          <AnimalDetail
+          url={'https://ie-iteration1.herokuapp.com/api/fox'}
+          ></AnimalDetail>
+        </AnimalNav>
+      </Layout>
+    </>
+  );
 }
